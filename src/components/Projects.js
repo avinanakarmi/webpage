@@ -20,9 +20,9 @@ const Projects = () => {
 								</div>
 							</div>
 
-							<div className="pt-8" onClick={() => window.open(project.link, '_blank')}>
-								<div className="text-center mb-6">
-									<h3 className="text-xl font-semibold text-gray-900 inline-flex items-center gap-2">
+							<div className="pt-8">
+								<div className="text-center mb-6 cursor-pointer hover:text-accent" onClick={() => window.open(project.link, '_blank')}>
+									<h3 className="text-xl font-semibold inline-flex items-center gap-2">
 										{project.title} - {project.date}
 										<svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
